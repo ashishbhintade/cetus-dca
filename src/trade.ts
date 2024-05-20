@@ -82,11 +82,13 @@ export async function trade(
 		(err) => {
 			if (err) {
 				console.error("Error writing file:", err);
-			} else {
-				console.log("File saved successfully!");
 			}
 		}
 	);
 
-	console.log(`[${new Date().toLocaleString()}] Swap Transaction Digest: ${tradeTxn?.digest}`);
+	console.log(
+		`[${new Date().toLocaleString()}] Swap Transaction Digest: ${
+			tradeTxn?.digest
+		}`
+	);
 }

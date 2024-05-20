@@ -11,8 +11,8 @@ async function main() {
 
 	const agenda = new Agenda({ db: { address: URI } });
 
-	agenda.define("hello agenda", async () => {
-		// console.log(`[${new Date().toLocaleString()}] Hello Agenda!`);
+	agenda.define("start dca", async () => {
+		// console.log(`[${new Date().toLocaleString()}] start dca!`);
 		await trade(
 			"0x8581097ba4ffe7e8cfed6146bd536cde5d08d0f94021fded8b62803922c824bf",
 			false,
@@ -22,13 +22,13 @@ async function main() {
 		);
 	});
 
-	agenda.every("5 seconds", "hello agenda");
+	agenda.every("5 seconds", "start dca");
 
 	await agenda.start();
 
 	setTimeout(async () => {
 		console.log("Stop Task");
-		await agenda.cancel({ name: "hello agenda" });
+		await agenda.cancel({ name: "start dca" });
 		await agenda.stop();
 
 		// stop the process
