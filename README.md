@@ -2,7 +2,8 @@
 
 Bot that allows to execute a Dollar Cost Averaging (DCA) strategy on the Cetus DEX, built with the Cetus SDK.
 
-> [!WARNING] > **Please note that this bot is still in development and is not ready for production use.**.
+> [!WARNING]
+> **Please note that this bot is still in development and is not ready for production use.**.
 
 ## Motivation
 
